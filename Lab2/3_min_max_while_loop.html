@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smallest and Largest - While Loop</title>
+</head>
+<body>
+    <script>
+        var a = [2, 19, 37, 48, 45, 94, 12, 23, 78];
+        var smallest = a[0];
+        var largest = a[0];
+        var i = 1;
+
+        while (i < a.length) {
+            if (a[i] < smallest) {
+                smallest = a[i];
+            }
+            if (a[i] > largest) {
+                largest = a[i];
+            }
+            i++;
+        }
+
+        document.write("Smallest number: " + smallest + "<br>");
+        document.write("Largest number: " + largest);
+    </script>
+</body>
+</html>
